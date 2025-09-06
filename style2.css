@@ -1,0 +1,149 @@
+/* ====== Reset & Base ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ====== Header Section ====== */
+.header-photo {
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.header-photo::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.header-text h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* ====== Container ====== */
+.container {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+/* ====== Profile Image ====== */
+.photo {
+  display: block;
+  margin: 0 auto 40px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 6px solid #0078ff;
+  box-shadow: 0px 6px 15px rgba(0, 120, 255, 0.4);
+}
+
+/* ====== Section Headings ====== */
+h2 {
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  position: relative;
+  color: #0078ff;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #00c6ff;
+  border-radius: 5px;
+}
+
+/* ====== Info Lists ====== */
+.info-list {
+  list-style: none;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.info-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list strong {
+  color: #0078ff;
+  margin-right: 8px;
+}
+
+/* ====== Section Text ====== */
+.section-text {
+  background: #fff;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-text:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 20px rgba(0, 120, 255, 0.2);
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+  }
+
+  .photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 0.95rem;
+  }
+}
